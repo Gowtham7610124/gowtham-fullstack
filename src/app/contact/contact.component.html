@@ -1,1 +1,47 @@
-<p>contact works!</p>
+<div class="main_container">
+    <div class="container1">
+        <div class="help"><br><br>
+            <h1><b>HOW CAN WE HELP YOU...?</b></h1>
+            <h1>SEND US A MESSAGE</h1><br><br>
+        </div>
+    </div>
+    <div class="message">
+        <div class="name">
+            
+            <div class="first_name">
+                <form>
+                    <h2>FIRST NAME</h2>
+                    <p><input id="name" name="name" type="text" [(ngModel)]="first_name" placeholder="enter your first Name"></p>
+                </form>
+            </div>
+    
+            <div class="last_name">
+                <form>
+                    <h2>LAST NAME</h2>
+                    <p><input id="name" name="name" type="text" [(ngModel)]="last_name" placeholder="enter your last name"></p>
+                </form>
+                
+            </div>
+        </div>
+
+        <div class="mail">
+            <form>
+                <h2>EMAIL ID</h2>
+                <p><input id="name" name="name" type="text" [(ngModel)]="email" placeholder="enter your mail id"></p>
+            </form>
+            
+        </div>
+
+        <div class="message_box">
+            <form>
+                <h2>MESSAGE</h2>
+                <textarea placeholder="enter your message"  [(ngModel)]="message"name="name" id="textarea" cols="30" rows="10"></textarea>
+            </form>
+            
+        </div>
+        <div class="submit">
+            <button (click)="submit()" type="submit">SUBMIT</button>
+        </div>
+    </div>
+
+</div>

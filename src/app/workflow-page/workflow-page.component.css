@@ -1,0 +1,15 @@
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+.container1, .container2{
+    text-align: center;
+}
+img{
+    transition: transform .2s; 
+}
+img:hover{
+    transform: scale(1.5);
+}

@@ -1,0 +1,63 @@
+.container1{
+    background-color: rgb(238, 220, 255);
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
+}
+.main_container h1{
+    color: blueviolet;
+}
+
+.main_container{
+    padding: 30px;
+}
+.message{
+    border: solid blueviolet 2px;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    color: blueviolet;
+    line-height: 30px;
+    background-color: rgb(238, 220, 255);
+}
+.name{
+    display: flex;
+}
+.first_name, .last_name, .mail, .message_box, .submit{
+    padding: 30px;
+}
+.mail input{
+    width: 390px;
+    height: 60px;
+    border-style: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+.message_box textarea{
+    width: 390px;
+    height: 60px;
+    border-style: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+.submit button{
+    background-color: blueviolet;
+    color: white;
+    width: 150px;
+    height: 60px;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.submit button:hover{
+    color: blueviolet;
+    background-color: rgb(225, 192, 255);
+}
+.first_name input, .last_name input{
+    border-style: none;
+    background-color: white;
+    height: 60px;
+    width:400px ;
+    padding: 10px;
+    border-radius: 30px;
+}

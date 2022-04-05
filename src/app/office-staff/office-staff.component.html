@@ -1,0 +1,77 @@
+<div class="main_container">
+    <h1><b>OFFICE STAFF WORK FLOW</b></h1><br><br><br>
+    <div  class="task_container">
+        <div class="text_container">
+            <h3>Id punch</h3>
+        </div>
+        
+        <div class="button_container">
+            <button (click)="first_container()" type="checkbox" >done</button>
+        </div>
+        
+    </div>
+
+    <br><br><div *ngIf="first" class="task_container"  id="divshow" >
+        <div class="text_container">
+            <h3>Worker attendence check</h3>
+        </div>
+        
+        <div class="button_container">
+            <button (click)="second_container()" type="checkbox" >done</button>
+        </div>
+        
+    </div>
+
+
+    <br><br><div *ngIf="second" class="task_container"  id="divshow" >
+        <div class="text_container">
+            <h3>stock in</h3>
+        </div>
+        
+        <div class="button_container">
+            <button (click)="third_container()" type="checkbox" >done</button>
+        </div>
+       
+    </div>
+
+    <br><br><div *ngIf="third" class="task_container"  id="divshow" >
+        <div class="text_container">
+            <h3>stock out</h3>
+        </div>
+        
+        <div class="button_container">
+            <button (click)="forth_container()" type="checkbox" >done</button>
+        </div>
+       
+    </div>
+
+    <br><br><div *ngIf="forth" class="task_container"  id="divshow" >
+        <h3>Accounts</h3>
+        <div class="button_container">
+            <button (click)="fifth_container()" type="checkbox" >done</button>
+        </div>
+       
+    </div>
+
+    <br><br><div *ngIf="fifth" class="task_container"  id="divshow" >
+        <h3>Previous day amount out</h3>
+        <div class="button_container">
+            <button (click)="sixth_container()" type="checkbox" >done</button>
+        </div>
+       
+    </div>
+
+    <br><br><div *ngIf="sixth" class="task_container"  id="divshow" >
+        <h3>Pending payment</h3>
+        <div class="button_container">
+            <button (click)="seventh_container()" type="checkbox" >done</button>
+        </div>
+       
+    </div>
+
+    <br><br><div *ngIf="seventh" class="task_container"  id="divshow" >
+        <h3>documentation</h3>
+       
+    </div>
+
+</div>

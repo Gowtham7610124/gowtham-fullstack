@@ -9,6 +9,11 @@ import { FeatureComponent } from './feature/feature.component';
 import { ReviewComponent } from './review/review.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import { WorkflowPageComponent } from './workflow-page/workflow-page.component';
+import { WorkerComponent } from './worker/worker.component';
+import { OfficeStaffComponent } from './office-staff/office-staff.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +23,17 @@ import { LoginComponent } from './login/login.component';
     FeatureComponent,
     ReviewComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    WorkflowPageComponent,
+    WorkerComponent,
+    OfficeStaffComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

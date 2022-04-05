@@ -1,0 +1,46 @@
+*{
+    background-color:rgb(251, 247, 255);
+}
+.container1{
+    display: flex;
+    padding: 30px;
+    line-height: 50px;
+    
+}
+.info{
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.img2{
+    text-align: center;
+}
+
+.container1, .img2, .cartlane, .bergstrome, .mc, .world_vision, .bank{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    line-height: 50px;
+    padding: 30px;
+    margin-left: 30px;
+    width: 1400px;
+}
+#real_time{
+    text-align: center;
+    color: blueviolet;
+}
+.main_container{
+    margin-top:50px;
+}
+.container1 h1, .bank h1, .bergstrome h1, .cartlane h1, .img2 h1, .info h1, .main_container h1, .mc h1, .world_vision h1{
+    color: blueviolet;
+}
+
+.bank:hover,.bergstrome:hover, .cartlane:hover, .container1:hover, .info:hover, .world_vision:hover, .mc:hover{
+    font-size: 20px;
+    transition: all 0.3s ease-in-out 0.1s;
+}
