@@ -1,50 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
+*{
+    font-family: 'Poppins', sans-serif; 
+}
 .container1{
-    background-color: rgb(238, 220, 255);
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     text-align: center;
     padding: 30px;
     border-radius: 30px;
 }
 .main_container h1{
-    color: blueviolet;
+    color: #2771ca;
 }
 
 .main_container{
     padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 8px;
 }
 .message{
-    border: solid blueviolet 2px;
     padding: 30px;
-    border-radius: 30px;
     margin-top: 20px;
-    color: blueviolet;
+    color: #2771ca;
     line-height: 30px;
-    background-color: rgb(238, 220, 255);
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .name{
     display: flex;
 }
 .first_name, .last_name, .mail, .message_box, .submit{
-    padding: 30px;
+    padding: 10px;
 }
 .mail input{
     width: 390px;
-    height: 60px;
-    border-style: none;
+    height: 20px;
+    border: solid 1px black;
     padding: 10px;
     border-radius: 30px;
 }
 .message_box textarea{
     width: 390px;
     height: 60px;
-    border-style: none;
+    border: solid 1px black;
     padding: 10px;
     border-radius: 30px;
 }
 .submit button{
     background-color: blueviolet;
     color: white;
-    width: 150px;
-    height: 60px;
+    width: 100px;
+    height: 30px;
     border-style: none;
     border-radius: 30px;
     cursor: pointer;
@@ -54,10 +69,15 @@
     background-color: rgb(225, 192, 255);
 }
 .first_name input, .last_name input{
-    border-style: none;
+    border: solid 1px black;
     background-color: white;
-    height: 60px;
+    height: 20px;
     width:400px ;
     padding: 10px;
     border-radius: 30px;
+}
+#customer_image{
+    position:absolute;
+    margin-left: 1050px;
+    margin-top: -350px;
 }

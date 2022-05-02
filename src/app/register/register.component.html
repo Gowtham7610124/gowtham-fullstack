@@ -1,36 +1,67 @@
 <div class="main_container">
     <div class="container1">
-        <form>
-            <h2>FIRST NAME</h2>
-            <p><input id="name" name="name" type="text" [(ngModel)]="first_name" placeholder="enter your first Name"></p>
-            {{first_name}}
-        </form>
+        <div class="form_container">
+            <form>
+                <div class="inp_container">
+                    <h2>First Name</h2>
+                    <p><input id="name" name="name" type="text" [(ngModel)]="first_name" placeholder="enter your first Name"></p>
+                </div>
+                <div class="writting">
+                    {{first_name}}
+                </div>
+            </form>
+        </div>
 
-        <form>
-            <h2>LAST NAME</h2>
-            <p><input id="name" name="name" type="text" [(ngModel)]="last_name" placeholder="enter your first Name"></p>
-            {{last_name}}
-        </form>
+        <div class="form_container">
+            <form>
+                <div class="inp_container">
+                    <h2>Last Name</h2>
+                    <p><input id="name" name="name" type="text" [(ngModel)]="last_name" placeholder="enter your first Name"></p>
+                </div>
+                <div class="writting">
+                    {{last_name}}
+                </div>
+            </form>
+        </div>
 
-        <form>
-            <h2>EMAIL</h2>
-            <p><input id="name" name="name" type="text" [(ngModel)]="email" placeholder="enter your first Name"></p>
-            {{email}}
-        </form>
+        <div class="form_container">
+            <form>
+                <div class="inp_container">
+                    <h2>Email</h2>
+                    <p><input id="name" name="name" type="text" [(ngModel)]="email" placeholder="Enter Your First Name"></p>
+                </div>
+                <div class="writting">
+                    {{email}}
+                </div>
+            </form>
+        </div>
 
-        <form>
-            <h2>PASSWORD</h2>
-            <p><input id="name" name="name" type="password" [(ngModel)]="password" placeholder="enter your first Name"></p>
-        </form>
+        <div class="form_container">
+            <form>
+                <div class="inp_container">
+                    <h2>Password</h2>
+                    <p><input id="name" name="name" type="password" [(ngModel)]="password" placeholder="Enter Your First Name"></p>
+                </div>
+            </form>
+        </div>
 
-        <form>
-            <h2>DATE OF BIRTH</h2>
-            <p><input id="name" name="name" type="text" [(ngModel)]="dob" placeholder="enter your first Name"></p>
-            {{dob}}
-        </form>
+        <div class="form_container">
+            <form>
+                <div class="inp_container">
+                    <h2>Date Of Birth</h2>
+                    <p><input id="name" name="name" type="text" [(ngModel)]="dob" placeholder="Enter Your First Name"></p>
+                </div>
+                <div class="writting">
+                    {{dob}}
+                </div>
+            </form>
+        </div>
         <div class="register">
-            <li id="overview"><a (click)="register()"  routerLink="/login">SUBMIT</a></li>
+            <li id="overview"><a (click)="register()"  routerLink="/login">Submit</a></li>
         </div>
     </div>
     
+</div>
+<div class="image_container">
+    <img src="https://cdn.pixabay.com/photo/2019/01/28/11/56/registration-3960205_960_720.jpg" alt="" width="800px">
 </div>

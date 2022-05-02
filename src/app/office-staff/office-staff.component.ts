@@ -8,42 +8,38 @@ import { Component, OnInit } from '@angular/core';
 export class OfficeStaffComponent implements OnInit {
   
   constructor() { }
-  first:boolean=false;
-  second:boolean=false;
-  third:boolean=false;
-  forth:boolean=false;
-  fifth:boolean=false;
-  sixth:boolean=false;
-  seventh:boolean=false;
+  inputField:any
+  disable = true
+  todolist = [""]
+  index=0
+  temp = false
+  pending:boolean=true
+  view:boolean=false
+  user_name:boolean=true
   ngOnInit(): void {
   }
-  first_container(){
-    this.first = ! this.first;
+  submit(){
+    this.temp = true
+    this.todolist.push(this.inputField)
+    console.log(this.todolist)
   }
 
-  second_container(){
-    this.second = ! this.second;
+  onKey(event:any){
+    if(this.inputField !== ''){
+      this.disable = false
+    }
+    else{
+      this.disable = true
+    }
   }
+  changing(){
+    this.pending=false
 
-  third_container(){
-    this.third = ! this.third;
   }
-
-  forth_container(){
-    this.forth = ! this.forth;
-  }
-
-  fifth_container(){
-    this.fifth = ! this.fifth;
-  }
-
-  sixth_container(){
-    this.sixth = ! this.sixth;
-  }
-
-  seventh_container(){
-    this.seventh = ! this.seventh;
-  }
+  onview(){
+    this.view = this.view=true
+    this.user_name=!this.user_name
   
  
+}
 }

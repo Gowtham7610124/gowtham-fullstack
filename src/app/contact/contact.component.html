@@ -3,22 +3,25 @@
         <div class="help"><br><br>
             <h1><b>HOW CAN WE HELP YOU...?</b></h1>
             <h1>SEND US A MESSAGE</h1><br><br>
+            <div class="image_help">
+                <img src="https://cdn.pixabay.com/photo/2019/06/06/16/02/technology-4256272__340.jpg" alt="" width="300px">
+            </div>
         </div>
     </div>
-    <div class="message">
+    <div method="POST" class="message">
         <div class="name">
             
             <div class="first_name">
                 <form>
-                    <h2>FIRST NAME</h2>
-                    <p><input id="name" name="name" type="text" [(ngModel)]="first_name" placeholder="enter your first Name"></p>
+                    <h2>First Name</h2>
+                    <p><input id="name" name="name" type="text" [(ngModel)]="contact.firstname" placeholder="enter your first Name"></p>
                 </form>
             </div>
     
             <div class="last_name">
                 <form>
-                    <h2>LAST NAME</h2>
-                    <p><input id="name" name="name" type="text" [(ngModel)]="last_name" placeholder="enter your last name"></p>
+                    <h2>Last Name</h2>
+                    <p><input id="name" name="name" type="text" [(ngModel)]="contact.lastname" placeholder="enter your last name"></p>
                 </form>
                 
             </div>
@@ -26,22 +29,26 @@
 
         <div class="mail">
             <form>
-                <h2>EMAIL ID</h2>
-                <p><input id="name" name="name" type="text" [(ngModel)]="email" placeholder="enter your mail id"></p>
+                <h2>Email Id</h2>
+                <p><input id="name" name="email" type="text" [(ngModel)]="contact.email" placeholder="enter your mail id"></p>
             </form>
             
         </div>
 
         <div class="message_box">
             <form>
-                <h2>MESSAGE</h2>
-                <textarea placeholder="enter your message"  [(ngModel)]="message"name="name" id="textarea" cols="30" rows="10"></textarea>
+                <h2>Message</h2>
+                <textarea placeholder="enter your message"  [(ngModel)]="contact.message"name="name" id="textarea" cols="30" rows="10"></textarea>
             </form>
             
         </div>
         <div class="submit">
-            <button (click)="submit()" type="submit">SUBMIT</button>
+            <button (click)="contactNow()" type="submit">Submit</button>
         </div>
     </div>
+    
 
+</div>
+<div class="cust_img">
+    <img id="customer_image" src="https://cdn.pixabay.com/photo/2022/03/01/08/11/call-center-7040784__340.png" alt="" width="300px">
 </div>

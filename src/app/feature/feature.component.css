@@ -31,13 +31,13 @@
 }
 #real_time{
     text-align: center;
-    color: blueviolet;
+    color: #2771ca;
 }
 .main_container{
     margin-top:50px;
 }
 .container1 h1, .bank h1, .bergstrome h1, .cartlane h1, .img2 h1, .info h1, .main_container h1, .mc h1, .world_vision h1{
-    color: blueviolet;
+    color: #2771ca;
 }
 
 .bank:hover,.bergstrome:hover, .cartlane:hover, .container1:hover, .info:hover, .world_vision:hover, .mc:hover{

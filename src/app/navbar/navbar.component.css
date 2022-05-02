@@ -14,16 +14,19 @@ a{
     padding: 20px;
 }
 .main_container{
-    background-color: blueviolet;
+    background-color: #2771ca;
     padding: 5px;
     color: white;
+    height: 110px;
 }
 li{
-    border: solid 1px white;
+    
     padding: 5px;
-    border-radius: 5px;
+   
 }
 li:hover{
+    border: solid 1px white;
+    border-radius: 5px;
     background-color: black;
     color: white;
 }
@@ -71,4 +74,7 @@ li:hover{
     margin-left: 500px;
     padding: 15px;
     border-radius: 30px;
+}
+#nav_bar{
+    font-size: 20px;
 }

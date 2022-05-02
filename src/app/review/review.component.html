@@ -1,1 +1,21 @@
-<p>review works!</p>
+<body>
+  <div id="container">
+    <div class="initial">
+      <br><h1>Add Your Work Flow</h1>
+      <br><br><div id="input">
+        <input type="text" name="" id="inputField" placeholder="Enter your work flow" [(ngModel)]="inputField" (keyup)="onKey($event)">
+        <button type="submit" id="submitButton" (click)="submit()" [disabled]="disable">Add Work</button>
+      </div>
+    </div>
+    <div class="primary_container" *ngIf="temp;">    
+      <div class="button_container" *ngFor="let todolist of todolist | slice:1; let i = index">
+        <p>{{todolist}}</p>
+        <div  id="{{ 'flow ' + i }}"><button (click)="changing()">Progress </button></div>
+        <div  id="{{ 'flow ' + i }}"><button [disabled]="pending">Completed</button></div>
+      </div>
+     
+
+  </div>
+
+</div>
+</body>

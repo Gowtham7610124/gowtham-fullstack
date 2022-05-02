@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import{HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,6 +14,7 @@ import { RegisterComponent } from './register/register.component';
 import { WorkflowPageComponent } from './workflow-page/workflow-page.component';
 import { WorkerComponent } from './worker/worker.component';
 import { OfficeStaffComponent } from './office-staff/office-staff.component';
+import { ContactService } from './contact.service';
 
 @NgModule({
   declarations: [
@@ -33,9 +34,10 @@ import { OfficeStaffComponent } from './office-staff/office-staff.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

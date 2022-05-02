@@ -1,0 +1,58 @@
+body{
+    background-image: url('https://papers.co/wallpaper/papers.co-vk66-samsung-galaxy-polyart-pastel-blue-violet-pattern-23-wallpaper.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 635px;
+}
+.button_container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 10px;
+}
+#text_container{
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+}
+.button_container button:focus{
+    background-color: green;
+}
+.primary_container{
+    position: absolute;
+    padding: 10px;
+    width: 700px;
+    border: solid 1px black ;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.button_container button{
+    background-color: blueviolet;
+    border-style: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    color: white;
+}
+.initial{
+    text-align: center;
+}
+.initial button{
+    margin-left: 10px;
+}
+.initial button{
+    background-color: black;
+    color: white;
+    border-style: none;
+    width: 150px;
+    height: 30px;
+}
+.initial input{
+    height: 25px;
+    width: 300px;
+}
+p{
+    color: white;
+}

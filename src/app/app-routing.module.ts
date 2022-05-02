@@ -19,7 +19,8 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'workflow-page',component:WorkflowPageComponent},
   {path:'worker',component:WorkerComponent},
-  {path:'office-staff',component:OfficeStaffComponent}
+  {path:'office-staff',component:OfficeStaffComponent},
+  {path:'review',component:ReviewComponent}
 ];
 
 @NgModule({

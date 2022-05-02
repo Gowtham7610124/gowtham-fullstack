@@ -1,90 +1,25 @@
-<div class="main_container">
-    <div *ngIf="show1" class="container_1">
-        <div class="text_container">
-            <h1>Attendence</h1>
+<body>
+    <div id="container">
+      <div class="initial">
+        <div *ngIf="user_name" class="user">
+          <br><input  placeholder="Enter your name hear" id="user_name" type="text">
+        <button>Ok</button>
         </div>
-        <div class="task_container">
-            <button (click)="toggleShow()" type="checkbox" >done</button>
+        <br><h1 *ngIf="view">Add Your Work Flow</h1>
+        <br><br><div *ngIf="view" id="input">
+          <input type="text" name="" id="inputField" placeholder="Enter your work flow" [(ngModel)]="inputField" (keyup)="onKey($event)">
+          <button type="submit" id="submitButton" (click)="submit()" [disabled]="disable">Add Work</button>
         </div>
-        
-        
-    </div>
-
-    <br><br><br><div *ngIf="isShown" class="container_1"  id="divshow" >
-        <div class="text_container">
-            <h3>wear Healmet , Safty Goggles , Working Shoue</h3>
+      </div>
+      <div class="primary_container" *ngIf="temp;">    
+        <div class="button_container" *ngFor="let todolist of todolist | slice:1; let i = index">
+          <p>{{todolist}}</p>
+          <div  id="{{ 'flow ' + i }}"><button (click)="changing()">Progress </button></div>
+          <div  id="{{ 'flow ' + i }}"><button [disabled]="pending">Completed</button></div>
         </div>
-        <div class="task_container">
-            <button (click)="design_container()" type="checkbox" >done</button>
-        </div>
-        
-        
-    </div>
-
-
-    <br><br><br><div *ngIf="design" class="container_1"  id="divshow" >
-        <div class="text_container">
-            <h3>Check the 2D design with the sample product</h3>
-        </div>
-        <div class="task_container">
-            <button (click)="analysis_container()" type="checkbox" >done</button>
-        </div>
-        
-        
-    </div>
-
-    <br><br><br><div *ngIf="analysis" class="container_1"  id="divshow" >
-        <div class="text_container">
-            <h3>Analysis with the proper software</h3>
-        </div>
-        <div class="task_container">
-            <button (click)="rawMaterial_container()" type="checkbox" >done</button>
-        </div>
-        
-        
-    </div>
-
-    <br><br><br><div *ngIf="raw_material" class="container_1"  id="divshow" >
-        <div class="text_container">
-            <h3>check for raw material</h3>
-        </div>
-        <div class="task_container">
-            <button (click)="start_container()" type="checkbox" >done</button>
-        </div>
-        
-        
-    </div>
-
-    <br><br><br><div *ngIf="start_work" class="container_1"  id="divshow" >
-        <div class="text_container">
-            <h3>Machining the product</h3>
-        </div>
-        <div class="task_container">
-            <button (click)="finish_container()" type="checkbox" >done</button>
-        </div>
-        
-        
-    </div>
-
-    <br><br><br><div *ngIf="finished_product" class="container_1"  id="divshow" >
-        <div class="text_container">
-            <h3>Product is completed</h3>
-        </div>
-        <div class="task_container">
-            <button (click)="purchase_team()" type="checkbox" >done</button>
-        </div>
-        
-        
-    </div>
-
-    <br><br><br><div *ngIf="purchase_teams" class="container_1"  id="divshow" >
-        <h3>Handed over to purchase team</h3>
        
+  
     </div>
-
-</div>
-
-
-
-
-
+  
+  </div>
+  </body>

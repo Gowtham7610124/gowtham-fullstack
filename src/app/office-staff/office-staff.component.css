@@ -1,22 +1,66 @@
-.task_container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color:rgb(228, 200, 255) ;
-    padding: 50px;
-    align-items: center;
-    border-radius: 30px;
+body{
+    background-image: url('https://papers.co/wallpaper/papers.co-vk66-samsung-galaxy-polyart-pastel-blue-violet-pattern-23-wallpaper.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 635px;
 }
-button{
-    background-color: blueviolet;
+.button_container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 10px;
+}
+#text_container{
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+}
+.button_container button:focus{
+    background-color: green;
+}
+.primary_container{
+    position: absolute;
+    padding: 10px;
+    width: 700px;
+    margin-left: 400px;
+    margin-top: 20px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.button_container button{
+    background-color: black;
+    border-style: none;
     width: 200px;
-    height: 100px;
+    height: 40px;
     border-radius: 30px;
     color: white;
 }
-.main_container{
-    padding: 30px;
-}
-h1{
+.initial{
     text-align: center;
+}
+.initial h1{
+    color: white;
+}
+.initial button{
+    margin-left: 10px;
+}
+.initial button{
+    background-color: black;
+    color: white;
+    border-style: none;
+    width: 150px;
+    height: 30px;
+}
+.initial input{
+    height: 25px;
+    width: 300px;
+}
+p{
+    color: white;
 }
