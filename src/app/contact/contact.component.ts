@@ -9,7 +9,7 @@ import { ContactService } from '../contact.service';
 })
 export class ContactComponent implements OnInit {
   contact: Contact=new Contact("","","","");
-  detail:any;
+  message:any;
 
   constructor(private service:ContactService) { }
   
@@ -20,6 +20,6 @@ export class ContactComponent implements OnInit {
   }
   public contactNow(){
     let resp=this.service.getInfo(this.contact);
-    resp.subscribe((data)=>this.detail=data);
+    resp.subscribe((data)=>this.message=data);
   }
 }

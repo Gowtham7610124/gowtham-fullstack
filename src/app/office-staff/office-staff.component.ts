@@ -13,7 +13,8 @@ export class OfficeStaffComponent implements OnInit {
   todolist = [""]
   index=0
   temp = false
-  pending:boolean=true
+  pending:boolean=false
+  completed:boolean=false
   view:boolean=false
   user_name:boolean=true
   ngOnInit(): void {
@@ -32,9 +33,8 @@ export class OfficeStaffComponent implements OnInit {
       this.disable = true
     }
   }
-  changing(){
-    this.pending=false
-
+  onGoing(){
+    
   }
   onview(){
     this.view = this.view=true

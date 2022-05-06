@@ -14,8 +14,14 @@
       <div class="primary_container" *ngIf="temp;">    
         <div class="button_container" *ngFor="let todolist of todolist | slice:1; let i = index">
           <p>{{todolist}}</p>
-          <div  id="{{ 'flow ' + i }}"><button (click)="changing()">Progress </button></div>
+          <div  id="{{ 'flow ' + i }}"><button (click)="onGoing()">Progress </button></div>
           <div  id="{{ 'flow ' + i }}"><button [disabled]="pending">Completed</button></div>
+          <div *ngIf="pending" class="pending_container">
+            <h3>Pending</h3>
+          </div>
+          <div *ngIf="completed" class="completed_container">
+            <h2>Completed</h2>
+          </div>
         </div>
        
   
